@@ -614,6 +614,12 @@ svg {
     grid-template-columns: 1.05fr 0.95fr;
 }
 
+.portfolio-card {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: 0.65fr 1.35fr;
+}
+
 .project-visual {
     position: relative;
     display: flex;
@@ -787,6 +793,39 @@ svg {
 
 .project-content .text-link {
     margin-top: 17px;
+}
+
+.portfolio-visual {
+    min-height: 0;
+    align-items: center;
+    gap: 9px;
+    background: #edf3ef;
+}
+
+.portfolio-mark {
+    color: var(--green);
+    font-family: "Manrope", sans-serif;
+    font-size: 46px;
+    font-weight: 800;
+    letter-spacing: -0.08em;
+}
+
+.portfolio-note {
+    color: #78867d;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 17px;
+}
+
+.project-links .text-link {
+    margin-top: 0;
 }
 
 .bloodbank-visual {
@@ -1253,8 +1292,17 @@ svg {
         grid-template-columns: 1fr;
     }
 
+    .portfolio-card {
+        grid-column: auto;
+        grid-template-columns: 1fr;
+    }
+
     .project-visual {
         min-height: 225px;
+    }
+
+    .portfolio-visual {
+        min-height: 190px;
     }
 
     .skill-grid {
